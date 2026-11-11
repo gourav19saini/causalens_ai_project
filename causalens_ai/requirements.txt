@@ -1,0 +1,22 @@
+# CausaLens AI — requirements
+# Tested baseline: Python 3.11
+#
+# Core app (REQUIRED — the app runs fully with just these):
+streamlit==1.38.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+scipy==1.13.1
+matplotlib==3.9.1
+plotly==5.23.0
+networkx==3.3
+
+# Optional, advanced causal ML (RECOMMENDED but not required):
+# The app automatically detects whether these are installed. If they are
+# missing or fail on your data, the app transparently falls back to a
+# built-in AIPW / T-learner estimator implemented with scikit-learn only.
+econml==0.15.0
+dowhy==0.11.1
+
+# Testing
+pytest==8.3.2
